@@ -47,11 +47,10 @@ function limpiarCaja() {
     document.querySelector('#valorUsuario').value = '';
     document.getElementById('primerPantalla').style.display = `none`;
     document.getElementById('segundaPantalla').style.display=`flex`;
-    document.getElementById('botoncolor').style.background= `rgb(179, 228, 245)`
+    document.getElementById('botoncolor').style.background= `rgb(179, 228, 245)`;
 }
 function botonCopiar(){
-
     let textoACopiar = document.getElementById('textoMensaje').textContent;
     navigator.clipboard.writeText(textoACopiar);
-};
+}
 condicionInicial();
