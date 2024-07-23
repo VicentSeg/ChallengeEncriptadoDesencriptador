@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptado y Desencriptador</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <img class="logo"src="./assets/Alura.png" alt="Simbolo Alura">   
+    </header>
+        <div class="principal">
+            <div class="principal__Izquierda">
+                <div class="principal__Izquierda__Texto">
+                    <textarea  class="texto" id="valorUsuario" placeholder="Ingrese el texto aquí" input::placeholder></textarea>
+                </div>
+                <div class="principal__Izquierda__Abajo">
+                    <div class="aviso">
+                        <span> &#9888;</span>Solo letras minúsculas y sin acentos
+                    </div>
+                    <div class="principal__Izquierda__Abajo__Botones">
+                        <button class="botonEncriptar" onclick="encriptadorDeTexto()">Encriptar!</button>
+                        <button class="botonDesencriptar" id="botoncolor" onclick="desencriptadorDeTexto()">Desencriptar!</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="principal__Derecha">
+                <div class="principal__Derecha__PrimerPantalla" id="primerPantalla">
+                    <img class="imagen"src="./assets/img.png" alt="Imagen de una animacion de persona con una lupa en la mano"> 
+                    <p class="negritas">Ningún mensaje fue encontrado</p>
+                    <p class="mensajeIngreseTexto">Ingresa el texto que deseas incriptar o desencriptar</p>
+                </div>
+                <div class="principal__Derecha__SegundaPantalla" id="segundaPantalla">
+                    <textarea readonly class="resultadoEnDesenciptado" id="textoMensaje"></textarea>
+                    <button class="botonCopiar" onclick="botonCopiar()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    <footer class="footer">
+        <p> Desarrollado por Juan Miguel Vicente S. </p>
+    </footer>       
+    <script src="app.js"></script>
+</body>
+</html>

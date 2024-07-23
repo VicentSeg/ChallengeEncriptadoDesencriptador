@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(179, 228, 245);
+   
+}
+.principal{
+    padding: 5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+}
+.principal__Derecha{
+    padding: 2%;
+    width: 30%;
+    height: 944px;
+    background-color: #ffffff;
+    border-radius: 32px; 
+    display: flex;
+}
+.principal__Derecha__PrimerPantalla{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.principal__Derecha__PrimerPantalla img{
+    width: 83%;
+    height: 33%;
+}
+.principal__Derecha__SegundaPantalla{
+    width: 100%;
+    height: 97.5%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+.principal__Izquierda{
+    padding: 2%;
+    width:50%;
+    height:900px;
+    background-color:transparent;  
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.principal__Izquierda__Texto{
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.principal__Izquierda__Abajo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+}
+.principal__Izquierda__Abajo__Botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.botonEncriptar,
+.botonDesencriptar {
+    width: 328px;
+    height: 67px;
+    padding: 2% 0%;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.botonEncriptar {
+    background-color: #0a3871;
+    color: #ffffff;
+    border: none;
+}
+.botonDesencriptar {
+    background-color: #898989;
+    color: #0a3871;
+    border-color:#0a3871;
+    border-style: solid;
+    border-width: 3px;
+}
+.botonCopiar {
+    width: 87%;
+    height: 67px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    background-color: #0a3871;
+    color: #ffffff;
+    font-size: 1rem;
+}
+.texto{
+    box-sizing: border-box;
+    padding: 5px;
+    outline:none;
+    resize: none;
+    border:none;
+    width:90%;
+    height:100%;
+    background:transparent;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    color:#0a3871;
+}
+.texto::placeholder{
+    color:#0a3871;
+    font-size: 2rem;
+}
+.resultadoEnDesenciptado{
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    resize: none;
+    width:90%;
+    height:90%;
+    background:transparent;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    color:#898989;
+}
+.aviso{
+    font-size:0.8rem;
+    align-items: center;
+    color:#898989
+}
+.mensajeIngreseTexto{
+    font-size:1rem;
+    color: #000000;
+    text-align: center;
+}
+.negritas{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000000;
+    text-align: center;
+}
+.logo{
+    padding: 2% 10%;
+    width: auto;
+}
+.footer{
+    color:#ffffff;
+    background-color:#000000;
+    padding: 24px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+@media (max-width:768px){
+    .principal{
+        flex-direction:column;
+        height: 1384px;
+        gap: 30px;
+    }
+    .principal__Derecha{
+        padding: 5%;
+        width:100%;
+        height:auto;
+    }
+    .principal__Derecha__SegundaPantalla{
+        height: 400px;
+    }
+    .principal__Derecha__PrimerPantalla{
+        margin: 15px;
+    }
+    .resultadoEnDesenciptado{
+        height:50%;
+    }
+    .principal__Izquierda{
+        width:100%;
+    }
+    .imagen{
+        display: none;
+    }
+}
+@media (max-width:375px){
+    .principal{
+        height: auto;
+        justify-content: start;
+        gap: 30px;
+    }
+    .principal__Derecha{
+        padding: 0;
+        height: auto;
+        justify-content: start;
+    }
+    .principal__Derecha__PrimerPantalla{
+        height: auto;
+        justify-content: start;
+    }
+    .principal__Derecha__SegundaPantalla{
+        padding: 10% 2%;
+        height:auto;
+        gap: 10px;
+    }
+    .resultadoEnDesenciptado{
+        height: 500px;
+    }
+    .texto{
+        height: 400px;
+        padding: 2%;
+    }
+    .principal__Izquierda{
+        padding: 0;
+        width:100%;
+        height: 50%;
+        flex-direction: column;
+    }
+    .principal__Izquierda__Texto{
+        height: 70%;
+    }
+    .principal__Izquierda__Abajo{
+        height: 30%;
+    }
+    .principal__Izquierda__Abajo__Botones{
+        flex-direction: column;
+    }        
+}
